@@ -9,6 +9,7 @@ from googleapiclient.discovery import build
 from flask import Blueprint, render_template, request
 import nltk
 nltk.download('movie_reviews')
+nltk.download('punkt')
 
 
 app_blueprint = Blueprint('app_blueprint', __name__)
